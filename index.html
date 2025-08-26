@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="stylesheet" rel="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Emergency Hotline</title>
+</head>
+<body>
+  <header>
+    <div class="flex justify-between items-center mx-auto px-3.5 py-2">
+        <div class="flex items-center justify-center gap-2">
+        <img src="./assets/logo.png" class="h-[2.5em] w-auto md:h-[3em] lg:h-[5em]">
+        <p class="text-[#006747] leading-[1.1] font-extrabold text-1xl md:text-3xl lg:text-4xl">Emergency <br>Service</p>
+    </div>
+    <div class="flex gap-2 items-center justify-center">
+        <div class="flex items-center justify-center gap-2 bg-[#EDFFF1] px-2 md:px-3 lg:px-5 py-1.5 md:py-2 lg:py-2.5 rounded-4xl hover:scale-105">
+            <p id="life" class="font-bold">0</p>
+            <img src="./assets/heart.png" class="h-[1.5rem]">
+        </div>
+        <div class="flex items-center justify-center gap-2 bg-[#EDFFF1] px-2 md:px-3 lg:px-5 py-1.5 md:py-2 lg:py-2.5 rounded-4xl hover:scale-105">
+            <p id="coin" class="font-bold">100</p>
+            <img src="./assets/coin.png" class="h-[1.5rem] ">
+        </div>
+        <div class="flex items-center justify-center gap-2 bg-[#00A63E] px-2 md:px-3 lg:px-5 py-1.5 md:py-2 lg:py-2.5 rounded-4xl hover:scale-105">
+            <p id="copy" class="text-white">2 Copy</p>  
+        </div>
+    </div>
+    </div>
+   
+</header>  
+<main class="bg-[#EDFFF1] mt-7">
+<div class="flex flex-col justify-center gap-3 items-center my-5 p-6 bg-[radial-gradient(ellipse_at_top,#006747,#013223)]">
+  <img src="./assets/logo.png" class="h-[3.5em] w-auto md:h-[4.5em] lg:h-[8em]">
+  <p class="text-2xl md:text-3xl lg:text-5xl text-white font-bold">Emergency Service Directory</p>
+  <p class="text-white font-semibold text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-10 p-10 md:p-20 lg:p-30">
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/emergency.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service1" class="font-bold text-2xl">National Emergency Number</p>
+        <p class="text-gray-400">National Emergency</p>
+     </div>
+     <div>
+        <p id="service1num" class="font-bold text-3xl mb-1.5">999</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">All</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click1" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click1" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/police.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service2" class="font-bold text-2xl">Police Helpline Number</p>
+        <p class="text-gray-400">Police</p>
+     </div>
+     <div>
+        <p id="service2num" class="font-bold text-3xl mb-1.5">999</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">All</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click2" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click2" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/fire-service.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service3" class="font-bold text-2xl">Fire Service Number</p>
+        <p class="text-gray-400">Fire Service</p>
+     </div>
+     <div>
+        <p id="service3num" class="font-bold text-3xl mb-1.5">999</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Fire</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click3" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click3" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/ambulance.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service4" class="font-bold text-2xl">Ambulance Service</p>
+        <p class="text-gray-400">Ambulance Service</p>
+     </div>
+     <div>
+        <p id="service4num" class="font-bold text-3xl mb-1.5">1994-999999</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Health</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click4" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click4" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/emergency.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service5" class="font-bold text-2xl">Women & Child Helpline</p>
+        <p class="text-gray-400">Women & Child Helpline</p>
+     </div>
+     <div>
+        <p id="service5num" class="font-bold text-3xl mb-1.5">109</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Help</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click5" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click5" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/emergency.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service6" class="font-bold text-2xl">Anti-Corruption Helpline</p>
+        <p class="text-gray-400">Anti-Corruption</p>
+     </div>
+     <div>
+        <p id="service6num" class="font-bold text-3xl mb-1.5">106</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Govt.</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click6" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click6" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/emergency.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service7" class="font-bold text-2xl">Electricity Helpline</p>
+        <p class="text-gray-400">Electricity Outage</p>
+     </div>
+     <div>
+        <p id="service7num" class="font-bold text-3xl mb-1.5">16216</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Electricity</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click7" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click7" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/brac.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service8" class="font-bold text-2xl">Brac Helpline</p>
+        <p class="text-gray-400">Brac Helpline</p>
+     </div>
+     <div>
+        <p id="service8num" class="font-bold text-3xl mb-1.5">16445</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">NGO</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click8" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click8" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+    <div>
+    <div class="bg-white shadow-lg rounded-2xl p-4 gap-3 flex flex-col justify-center hover:scale-105">
+     <div class="flex justify-between items-center">
+      <img src="./assets/Bangladesh-Railway.png" class="h-[1.5rem] w-auto">
+      <img class="like-click" src="./assets/like.png">
+     </div>
+     <div >
+        <p id="service9" class="font-bold text-2xl">Bangladesh Railway Helpline </p>
+        <p class="text-gray-400">Bangladesh Railway</p>
+     </div>
+     <div>
+        <p id="service9num" class="font-bold text-3xl mb-1.5">163</p>
+        <span class="bg-gray-200 px-4 rounded-3xl">Travel</span>
+     </div>
+     <div class="flex justify-center items-center gap-1.5 w-full">
+  <button id="copy-click9" type="button" class="btn btn-active flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/copy.png">
+    <p class="text-gray-400">Copy</p>
+  </button>
+
+  <button id="call-click9" type="button" class="btn btn-active bg-[#00A63E] flex-1 flex justify-center items-center gap-2">
+    <img src="./assets/call.png">
+    <p class="text-white">Call</p>
+  </button>
+</div>
+
+      
+     </div>
+    </div>
+</div>
+
+</main>
+
+
+
+
+
+ <script src="./script.js"></script>    
+</body>
+</html>
