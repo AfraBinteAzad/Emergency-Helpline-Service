@@ -30,6 +30,16 @@ document.getElementById("call-click1").addEventListener("click",function(e){
         const service=document.getElementById("service1").innerText;
         const number=document.getElementById("service1num").innerText;
         alert("Calling " + service + " " + number + " .....");
+
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -58,6 +68,16 @@ document.getElementById("call-click2").addEventListener("click",function(e){
         const service=document.getElementById("service2").innerText;
         const number=document.getElementById("service3num").innerText;
         alert("Calling " + service + " " + number + " .....");
+
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -86,6 +106,16 @@ document.getElementById("call-click3").addEventListener("click",function(e){
         const service=document.getElementById("service3").innerText;
         const number=document.getElementById("service3num").innerText;
         alert("Calling " + service + " " + number + " .....");
+
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -114,6 +144,15 @@ document.getElementById("call-click4").addEventListener("click",function(e){
         const service=document.getElementById("service4").innerText;
         const number=document.getElementById("service4num").innerText;
         alert("Calling " + service + " " + number + " .....");
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -142,6 +181,15 @@ document.getElementById("call-click5").addEventListener("click",function(e){
         const service=document.getElementById("service5").innerText;
         const number=document.getElementById("service5num").innerText;
         alert("Calling " + service + " " + number + " .....");
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -170,6 +218,16 @@ document.getElementById("call-click6").addEventListener("click",function(e){
         const service=document.getElementById("service6").innerText;
         const number=document.getElementById("service6num").innerText;
         alert("Calling " + service + " " + number + " .....");
+
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -199,6 +257,15 @@ document.getElementById("call-click7").addEventListener("click",function(e){
         const service=document.getElementById("service7").innerText;
         const number=document.getElementById("service7num").innerText;
         alert("Calling " + service + " " + number + " .....");
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -228,6 +295,16 @@ document.getElementById("call-click8").addEventListener("click",function(e){
         const service=document.getElementById("service8").innerText;
         const number=document.getElementById("service8num").innerText;
         alert("Calling " + service + " " + number + " .....");
+
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
@@ -255,17 +332,22 @@ document.getElementById("call-click9").addEventListener("click",function(e){
         const service=document.getElementById("service9").innerText;
         const number=document.getElementById("service9num").innerText;
         alert("Calling " + service + " " + number + " .....");
+        const timestamp=new Date().toLocaleTimeString();
+        const historylist=document.getElementById("history-list");
+        const list=document.createElement("li");
+        list.className="flex justify-between items-center";
+        list.innerHTML=`
+            <span class="font-bold">${service} <br> ${number}</span>
+            <span class="font-semibold">${timestamp}</span>
+        `;
+        historylist.prepend(list);
     }
 })
 
-document.querySelectorAll(".copy-btn").forEach(btn => {
-    btn.addEventListener("click", function(e) {
-        e.preventDefault();
-        const number = btn.dataset.number;
-        navigator.clipboard.writeText(number);
-        alert(number + " Have Been Copied");
 
-        const copycount = document.getElementById("copy");
-        copycount.innerText = parseInt(copycount.innerText) + 1;
-    });
-});
+document.getElementById("clear-button").addEventListener("click",function(e){
+    const history=document.getElementById("history-list");
+    while (history.firstChild){
+        history.removeChild(history.firstChild);
+    }
+})
